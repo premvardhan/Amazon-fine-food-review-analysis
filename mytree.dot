@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="great <= 0.5\ngini = 0.5\nsamples = 70000\nvalue = [35000.0, 35000.0]", fillcolor="#399de500"] ;
+1 [label="best <= 0.5\ngini = 0.494\nsamples = 52172\nvalue = [31704.824, 25343.754]", fillcolor="#e5813933"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="love <= 0.5\ngini = 0.484\nsamples = 44759\nvalue = [30427.889, 21316.309]", fillcolor="#e581394c"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+180 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 180 ;
+321 [label="disappoint <= 0.5\ngini = 0.366\nsamples = 7413\nvalue = [1276.934, 4027.445]", fillcolor="#399de5ae"] ;
+1 -> 321 ;
+322 [label="(...)", fillcolor="#C0C0C0"] ;
+321 -> 322 ;
+435 [label="(...)", fillcolor="#C0C0C0"] ;
+321 -> 435 ;
+452 [label="disappoint <= 0.5\ngini = 0.379\nsamples = 17828\nvalue = [3295.176, 9656.246]", fillcolor="#399de5a8"] ;
+0 -> 452 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+453 [label="thought <= 0.5\ngini = 0.36\nsamples = 17460\nvalue = [2926.665, 9496.62]", fillcolor="#399de5b0"] ;
+452 -> 453 ;
+454 [label="(...)", fillcolor="#C0C0C0"] ;
+453 -> 454 ;
+563 [label="(...)", fillcolor="#C0C0C0"] ;
+453 -> 563 ;
+590 [label="wont <= 0.5\ngini = 0.422\nsamples = 368\nvalue = [368.511, 159.626]", fillcolor="#e5813991"] ;
+452 -> 590 ;
+591 [label="(...)", fillcolor="#C0C0C0"] ;
+590 -> 591 ;
+610 [label="(...)", fillcolor="#C0C0C0"] ;
+590 -> 610 ;
+}
