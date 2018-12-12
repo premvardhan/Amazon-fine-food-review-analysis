@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="great <= 0.028\ngini = 0.5\nsamples = 70000\nvalue = [35000.0, 35000.0]", fillcolor="#399de500"] ;
+1 [label="best <= 0.016\ngini = 0.495\nsamples = 54872\nvalue = [32746.082, 26734.539]", fillcolor="#e581392f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="love <= 0.036\ngini = 0.486\nsamples = 47026\nvalue = [31417.728, 22468.786]", fillcolor="#e5813949"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+364 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 364 ;
+585 [label="disappoint <= 0.011\ngini = 0.362\nsamples = 7846\nvalue = [1328.355, 4265.752]", fillcolor="#399de5b0"] ;
+1 -> 585 ;
+586 [label="(...)", fillcolor="#C0C0C0"] ;
+585 -> 586 ;
+737 [label="(...)", fillcolor="#C0C0C0"] ;
+585 -> 737 ;
+764 [label="disappoint <= 0.034\ngini = 0.337\nsamples = 15128\nvalue = [2253.918, 8265.461]", fillcolor="#399de5b9"] ;
+0 -> 764 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+765 [label="thought <= 0.041\ngini = 0.318\nsamples = 14904\nvalue = [2018.242, 8169.799]", fillcolor="#399de5c0"] ;
+764 -> 765 ;
+766 [label="(...)", fillcolor="#C0C0C0"] ;
+765 -> 766 ;
+945 [label="(...)", fillcolor="#C0C0C0"] ;
+765 -> 945 ;
+980 [label="wont disappoint <= 0.029\ngini = 0.411\nsamples = 224\nvalue = [235.676, 95.662]", fillcolor="#e5813997"] ;
+764 -> 980 ;
+981 [label="(...)", fillcolor="#C0C0C0"] ;
+980 -> 981 ;
+1028 [label="(...)", fillcolor="#C0C0C0"] ;
+980 -> 1028 ;
+}
